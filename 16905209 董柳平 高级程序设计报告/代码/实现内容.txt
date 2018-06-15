@@ -1,0 +1,67 @@
+2015-03-06 00:00:00 strategy [INFO] BUY at $14.68
+2015-03-16 00:00:00 strategy [INFO] SELL at $14.18
+2015-03-17 00:00:00 strategy [INFO] BUY at $14.60
+2015-03-18 00:00:00 strategy [INFO] SELL at $14.58
+2015-03-20 00:00:00 strategy [INFO] BUY at $16.78
+2015-05-08 00:00:00 strategy [INFO] SELL at $19.11
+2015-05-11 00:00:00 strategy [INFO] BUY at $20.22
+2015-06-17 00:00:00 strategy [INFO] SELL at $25.70
+2015-06-18 00:00:00 strategy [INFO] BUY at $26.32
+2015-06-19 00:00:00 strategy [INFO] SELL at $25.51
+2015-08-06 00:00:00 strategy [INFO] BUY at $14.30
+2015-08-28 00:00:00 strategy [INFO] SELL at $16.02
+2015-08-31 00:00:00 strategy [INFO] BUY at $17.37
+2015-09-01 00:00:00 strategy [INFO] SELL at $17.05
+2015-09-02 00:00:00 strategy [INFO] BUY at $15.87
+2015-09-07 00:00:00 strategy [INFO] SELL at $15.02
+2015-10-12 00:00:00 strategy [INFO] BUY at $16.82
+2015-11-30 00:00:00 strategy [INFO] SELL at $18.62
+2015-12-15 00:00:00 strategy [INFO] BUY at $22.22
+2016-01-05 00:00:00 strategy [INFO] SELL at $21.02
+2016-01-06 00:00:00 strategy [INFO] BUY at $21.64
+2016-01-14 00:00:00 strategy [INFO] SELL at $18.72
+2016-02-16 00:00:00 strategy [INFO] BUY at $21.02
+2016-03-01 00:00:00 strategy [INFO] SELL at $19.50
+2016-03-02 00:00:00 strategy [INFO] BUY at $19.82
+2016-03-30 00:00:00 strategy [INFO] SELL at $23.20
+2016-03-31 00:00:00 strategy [INFO] BUY at $22.78
+2016-04-08 00:00:00 strategy [INFO] SELL at $23.10
+2016-04-11 00:00:00 strategy [INFO] BUY at $23.72
+2016-04-19 00:00:00 strategy [INFO] SELL at $23.34
+2016-04-20 00:00:00 strategy [INFO] BUY at $24.42
+2016-04-21 00:00:00 strategy [INFO] SELL at $22.65
+2016-04-22 00:00:00 strategy [INFO] BUY at $23.00
+2016-04-25 00:00:00 strategy [INFO] SELL at $22.23
+2016-05-04 00:00:00 strategy [INFO] BUY at $23.48
+2016-05-05 00:00:00 strategy [INFO] SELL at $23.27
+2016-05-06 00:00:00 strategy [INFO] BUY at $23.37
+2016-05-09 00:00:00 strategy [INFO] SELL at $22.56
+2016-06-07 00:00:00 strategy [INFO] BUY at $21.09
+2016-06-08 00:00:00 strategy [INFO] SELL at $20.82
+2016-06-13 00:00:00 strategy [INFO] BUY at $21.37
+2016-08-05 00:00:00 strategy [INFO] SELL at $27.80
+2016-08-08 00:00:00 strategy [INFO] BUY at $27.04
+2016-08-09 00:00:00 strategy [INFO] SELL at $26.47
+2016-10-18 00:00:00 strategy [INFO] BUY at $24.48
+2016-11-21 00:00:00 strategy [INFO] SELL at $24.52
+2017-02-07 00:00:00 strategy [INFO] BUY at $22.36
+2017-02-16 00:00:00 strategy [INFO] SELL at $21.84
+2017-02-17 00:00:00 strategy [INFO] BUY at $21.95
+2017-02-21 00:00:00 strategy [INFO] SELL at $21.50
+2017-02-22 00:00:00 strategy [INFO] BUY at $21.70
+2017-03-06 00:00:00 strategy [INFO] SELL at $21.15
+2017-03-24 00:00:00 strategy [INFO] BUY at $21.45
+2017-03-27 00:00:00 strategy [INFO] SELL at $21.57
+2017-03-28 00:00:00 strategy [INFO] BUY at $22.05
+2017-03-31 00:00:00 strategy [INFO] SELL at $21.00
+2017-04-06 00:00:00 strategy [INFO] BUY at $21.65
+2017-09-20 00:00:00 strategy [INFO] SELL at $22.21
+2017-09-21 00:00:00 strategy [INFO] BUY at $22.11
+2017-09-22 00:00:00 strategy [INFO] SELL at $21.31
+最终资产价值 Final portfolio value: $1000064.40
+2017-12-18 00:00:00 strategy [INFO] BUY at $15.40
+最终资产价值 Final portfolio value: $1000064.40
+累计回报率 Cumulative returns: 0.01 %
+夏普比率 Sharpe ratio: -491.93
+最大回撤率 Max. drawdown: 0.01 %
+最长回撤时间 Longest drawdown duration: 858 days, 0:00:00
