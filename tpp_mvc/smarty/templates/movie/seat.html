@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/seat.css">
+    <link rel="stylesheet" href="../css/login_top.css">
+</head>
+<script src="http://www.daimasucai.com/daima/template/1/js/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.seat-charts.min.js"></script>
+<script language="javascript" src="../js1/seat.js"></script>
+<script  language="javascript" src="../js1/seat1.js"></script>
+
+<div class="head-wrap">
+    <div class="head-content center-wrap">
+        <h1 class="logo">
+            <a target="_top" href="#"></a>
+        </h1>
+        <div class="cityWrap">
+            <a id="cityName" class="cityName" href="javascript:">
+                <span class="name" data-id="330100">杭州</span>
+                <s class="tri"></s>
+            </a>
+        </div>
+        <div class="nav-wrap">
+            <ul class="nav">
+                <li class="J_NavItem ">
+                    <a href="#" target="_top">首页</a>
+                </li>
+                <li class="J_NavItem  current ">
+                    <a href="#" target="_top">影片</a>
+                </li>
+                <li class="J_NavItem ">
+                    <a href="#" target="_top">影院</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="entrance-wrap">
+            <ul class="entrance">
+                <li class="entrance-item">
+                    <a class="phone  " href="#">手机购买</a>
+                </li>
+                <li class="entrance-item">
+                    <a class="service" >客服咨询</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id = "seat1">
+    <div class="center-wrap">
+        <div class='seat-step'>
+            <ul>
+                <li class="down"><s></s>1.选择影片，场次</li>
+                <li class="current">2.选座，填手机号</li>
+                <li class="future">3.确认订单，支付</li>
+                <li class="future">4.支付成功，影院取票观影</li>
+            </ul>
+        </div>
+    </div>
+    <div class="center-wrap seat-wrap">
+        <div class="seat-left">
+            <div class="clearfix">
+                <div class="seatContainer " id="seat-map" >
+                    {section name=seat loop=$seat}
+                    <div class="seatTitle">
+                        <h2>
+                           {$seat[seat].dyy_name}{$seat[seat].Fyt_name} 银幕
+                        </h2>
+                    </div>
+                    {/section}
+                </div>
+
+</div>
+
+            <div id="legend" hidden>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="seat-right">
+               {section name=seat loop=$seat}
+            <div class="seatMovie clearfix">
+                <div class="picBox">
+                    <a href="https://dianying.taobao.com/showDetail.htm?showId=213360&n_s=new">
+                        <img src={$seat[seat].Film_image_path}></a>
+                </div>
+                <ul>
+                    <li><h3>{$seat[seat].Film_name} </h3></li>
+                    <li>版本：{$seat[seat].Version}</li>                <li>片长：{$seat[seat].film_time}分钟 </li>            </ul>
+            </div>
+            <div class="seatContent">
+                <ul>
+                    <li>
+                        <label>影院：</label>
+                        <strong>{$seat[seat].dyy_name}</strong>
+                    </li>
+                    <li>
+                        <label>影厅：</label>
+                        <strong>{$seat[seat].Fyt_name}</strong>
+                    </li>
+                    <li>
+                        <label>场次：</label>
+                        <a href="javascript:" class="changPlace J_show"><s></s>更换场次</a>
+                        <em>{$seat[seat].data}{$seat[seat].Starttime}</em>
+                    </li>
+                    <li  class="line">
+                        <!--<label>座位:</label>
+                        <span class="No_set" style="">还未选择座位</span>
+                        <div class="J_pewGroup"></div>
+                        <p class="J_seatNum_tips" style="">点击<em>左侧座位图</em>选择座位，再次点击取消</p>
+                        <p class="J_seatNum_text" style="display: none;">已选择<em id = "counter">0</em>个座位，再次点击座位可以取消</p>-->
+                        <ul id="selected-seats"></ul>
+                    </li>
+                    <li>
+                        <label>原价：</label>
+                        <span class="J_originPrice originPrice" data-originprice="3500">&yen;{$seat[seat].Film_price} x <i id = "counter">0</i></span>
+                    </li>
+
+                    <li class="total">
+                        <label>总计:</label>
+                        <div>
+                            &yen;
+                            <span class="J_price" data-price="3500" id = "total">
+							0
+						</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            {/section}
+            <div class="seatForm">
+                <input type="hidden" id="scheduleId" value="519662162" class="J_scheduleId">
+                <input type="hidden" id="maxCanBuy" class="J_seatNum" value="4">
+                <input type="hidden" id="seatInfo" class="J_seatNum">
+                <input name='_tb_token_' type='hidden' value='e473453d38815'>
+                <ul>
+                    <li>接收电子码的手机号(11位)</li>
+                    <li class="telphone">
+                        <label class="placehold J_overTxtLabel"></label>
+                        <input type="text" class="txt J_tel" id = "telephone1" value="" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'')">
+                        <div class="telphone_show J-telphone_show" style="display: none;"></div>
+                    </li>
+                    <li>
+
+
+                        <a class="sub J_bt" href="javascript:;" onclick="seatbuy(seat_sale,fyt_plan_id,usename,money1)">确认信息，下单</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

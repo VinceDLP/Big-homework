@@ -1,0 +1,52 @@
+<div class="left-wrap" data-spm="w2">
+
+    <div class="tab-control tab-movie-tit">
+
+        <a class="{$movie1.a}" href="javascript:void(0)" onclick="javascript:movie(par);return false; "> 正在热映 </a>
+        <a class="{$movie1.b}" href="javascript:void(0)" onclick="javascript:movie(f);return false; ">即将上映</a>
+        <!--a class="more" href="#">查看全部&nbsp;&gt;</a-->
+    </div>
+
+    <div class="tab-content">
+        <div class="tab-movie-list" >
+            <!-- 正在热映 -->
+            {section name=Film_id loop=$movie}
+            <div class="movie-card-wrap">
+
+                <a href="../logic/movie1.php?new={$movie[Film_id].Film_id}"
+                   class="movie-card">
+                    <div class="movie-card-tag"></div>
+                    <div class="movie-card-poster">
+                        <img width="160" height="220"
+                             data-src="https://img.alicdn.com/bao/uploaded/i4/TB18cozaDqWBKNjSZFAXXanSpXa_.jpg_160x240.jpg"
+                             src={$movie[Film_id].Film_image_path}>
+                    </div>
+                    <div class="movie-card-name">
+                        <span class="bt-l">{$movie[Film_id].Film_name}</span>
+                        <span class="bt-r">{$movie[Film_id].Hot}</span>
+                    </div>
+                    <div class="movie-card-info">
+                        <div class="movie-card-mask"></div>
+                        <div class="mask">
+                            <div class="sub">
+                                <span>导演：{$movie[Film_id].Director}</span>
+                                <span>主演：{$movie[Film_id].Actors}</span>
+                                <span>类型：{$movie[Film_id].Type}</span>
+                                <span>地区：{$movie[Film_id].chuntry}</span>
+                                <span>语言：{$movie[Film_id].Language}</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../logic/movie1.php?new={$movie[Film_id].Film_id}"
+                   class="movie-card-buy">选座购票</a>
+
+            </div>
+            {/section}
+        </div>
+
+    </div>
+</div>
+</div>
+
